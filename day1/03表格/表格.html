@@ -5,8 +5,49 @@
     <title>Title</title>
 </head>
 <body>
-  <table>
-      <
-  </table>
+<!--border->边框属性 cellspacing->单元格间间距属性  cellpadding->单元格内文字和单元格间的距离 align->设置表格在页面上水平的位置 -->
+<table width="500" border="1" cellspacing="0" cellpadding="10" align="center">
+    <caption>名单表</caption>
+    <thead>
+    <tr>
+        <!--  th为表头标签-->
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>地区</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>张三</td>
+        <td>男</td>
+        <td>20</td>
+<!--        跨行标签rowspan-->
+        <td rowspan="4">中国</td>
+    </tr>
+    <tr>
+        <td>李四</td>
+        <td>女</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>王五</td>
+        <td>男</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <td>赵六</td>
+<!--        跨列合并标签 colspan-->
+        <td colspan="2">未知</td>
+
+    </tr>
+    <tr>
+        <td>周七</td>
+        <td>女</td>
+        <td>22</td>
+        <td>其他</td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
