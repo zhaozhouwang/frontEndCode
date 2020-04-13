@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .first::first-letter {
+            color: red;
+            font-size: 50px;
+        }
+        .first::first-line {
+            font-weight: bolder;
+        }
+        p::selection {
+            color: red;
+            background-color: #0000ff;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+</head>
+<body>
+<h1>层叠样式表</h1>
+<p class="first">
+    从HTML被发明开始，样式就以各种形式存在。不同的浏览器结合它们各自的样式语言为用户提供页面效果的控制。最初的HTML只包含很少的显示属性。
+    随着HTML的成长，为了满足页面设计者的要求，HTML添加了很多显示功能。但是随着这些功能的增加，HTML变的越来越杂乱，而且HTML页面也越来越臃肿。于是CSS便诞生了。
+</p>
+</body>
+</html>
