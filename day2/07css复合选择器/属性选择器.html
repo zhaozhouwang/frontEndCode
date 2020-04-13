@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /*a[title]代表a标签内包含title属性即可*/
+        /*value*  星号代表通配符 即value值内有b即可*/
+        a[title], a[class], input[value*='b'] {
+            color: #5FFF33;
+        }
+        /*value=代表input标签中,value属性的值等于a即可*/
+        input[value='a'] {
+            color: #ff0000;
+        }
+        /*value^= 代表value属性值以'提'开头即可*/
+        input[value^='提']{
+            color: pink;
+        }
+        /*value$= 代表value属性值以'击'结尾即可*/
+        input[value$='击']{
+            font-weight: bolder;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="#" title="我是百度">百度</a>
+<a href="#" title="我是新浪">新浪</a>
+<a href="#">搜狐</a>
+<a href="#" class="alibaba">阿里</a>
+<a href="#">腾讯</a>
+<br/>
+<input type="text" value="a" name="" id="a">
+<input type="text" value="a" name="" id="b">
+<input type="text" value="a" name="" id="c">
+<input type="text" value="bc" name="" id="d">
+<input type="text" value="bd" name="" id="e">
+<input type="submit" value="提交" name="" id="f">
+<input type="submit" value="提走" name="" id="g">
+<input type="button" value="点击">
+<input type="button" value="打击">
+</body>
+</html>
