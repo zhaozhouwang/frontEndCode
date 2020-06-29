@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    //匿名函数
+    var sumStr = function () {
+        return 1 + 1;
+    }
+    console.log(sumStr());
+
+
+    //自调用函数
+    (function () {
+        console.log(123);
+    })();
+
+    console.log(typeof sumStr());
+</script>
+<body>
+
+</body>
+</html>
