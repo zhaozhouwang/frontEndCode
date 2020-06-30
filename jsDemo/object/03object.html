@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //对象的创建方式
+        //1,对象字面量的方式创建
+        var dog = {
+            name: '旺财',
+            age: 12,
+            bark: function (barkStr) {
+                console.log(barkStr);
+            }
+        }
+
+        //2,new object()的方式创建
+        var hero = new Object();
+        hero.name = 'zzw';
+        hero.weapon = '弓箭';
+        hero.age = 18;
+        hero.attack = function () {
+            console.log("打打打");
+        }
+
+
+        //3,工厂方法
+        function createStaff(name, age, hrid) {
+            var staff = {
+                name: name,
+                age: age,
+                hrid: hrid
+            }
+
+            return staff;
+        }
+
+        var staff = createStaff('zzw', 18, 'k10311');
+        console.log(staff.hrid)
+
+
+        //4,自定义构造函数
+        function Cat(name, typeCat) {
+            this.name = name;
+            this.typeCat = typeCat;
+            this.eat = function () {
+                console.log("吃屎");
+            }
+        }
+
+        var catOne = new Cat(`喵`, '加菲');
+        console.log(catOne.name);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
