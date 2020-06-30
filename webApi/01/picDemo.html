@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <div><input type="button" value="点我" id="btn"></div>
+    <div><img src="img/san.jpg" id="img"></div>
+</div>
+<script>
+    var num = 0;
+    var btn = document.getElementById('btn');
+    btn.onclick = function () {
+        var element = document.getElementById('img');
+        if (num == 0) {
+            element.src = 'img/hong.jpg';
+            num++;
+        } else {
+            element.src = 'img/san.jpg';
+            num--;
+        }
+    }
+</script>
+</body>
+</html>
