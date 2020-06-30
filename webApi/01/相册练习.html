@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #title {
+            font-size: large;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+<div id="title">相册</div>
+<p></p>
+<p></p>
+<div>
+    <img class="smallImg" id="small1" src="img/1-small.jpg">&nbsp;&nbsp;
+    <img class="smallImg" id="small2" src="img/2-small.jpg">&nbsp;&nbsp;
+    <img class="smallImg" id="small3" src="img/3-small.jpg">&nbsp;&nbsp;
+    <img class="smallImg" id="small4" src="img/4-small.jpg">&nbsp;&nbsp;
+</div>
+<p></p>
+<p></p>
+<div>
+    <img src="" id="ShowOne" >
+</div>
+<script>
+    var smallOne = document.getElementById('small1');
+    var smallTwo = document.getElementById('small2');
+    var smallThree = document.getElementById('small3');
+    var smallFour = document.getElementById('small4');
+    smallOne.onclick = function () {
+        var showOne = document.getElementById('ShowOne');
+        showOne.src = 'img/1.jpg';
+    }
+    smallTwo.onclick = function () {
+        var showOne = document.getElementById('ShowOne');
+        showOne.src = 'img/2.jpg';
+    }
+    smallThree.onclick = function () {
+        var showOne = document.getElementById('ShowOne');
+        showOne.src = 'img/3.jpg';
+    }
+    smallFour.onclick = function () {
+        var showOne = document.getElementById('ShowOne');
+        showOne.src = 'img/4.jpg';
+    }
+</script>
+</body>
+</html>
