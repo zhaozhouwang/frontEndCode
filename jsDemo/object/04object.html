@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //遍历和删除对象属性
+        var dog = {
+            name: '旺财',
+            age: 2,
+            bark: function () {
+                console.log("汪汪");
+            }
+        }
+        //遍历对象
+        for (var key in dog) {
+            console.log(key);
+            console.log(dog[key]);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
