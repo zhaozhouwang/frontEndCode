@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .divClassShow {
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+        }
+
+        .divClasshidden {
+            display: none;
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+<div><input type="button" value="隐藏" id="btn"></div>
+<div id="div1" class="divClassShow"></div>
+</body>
+<script>
+    var btn = document.getElementById('btn');
+    btn.onclick = function () {
+        var value = btn.value;
+        var div = document.getElementById('div1');
+        if ('隐藏' === value) {
+            btn.value = '显示';
+            div.className = 'divClasshidden';
+        } else {
+            btn.value = '隐藏';
+            div.className = 'divClassShow';
+        }
+    }
+</script>
+</html>
