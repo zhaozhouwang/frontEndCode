@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input type="text" id="txt1"><br>
+    <input type="text" id="txt2"><br>
+    <input type="text" id="txt3"><br>
+    <input type="text" id="txt4"><br>
+    <input type="text" id="txt5"><br>
+    <input type="button" value="点我" id="btn">
+</div>
+<script>
+    var txt1 = document.getElementById('txt1');
+    var txt2 = document.getElementById('txt2');
+    var txt3 = document.getElementById('txt3');
+    var txt4 = document.getElementById('txt4');
+    var txt5 = document.getElementById('txt5');
+    txt1.value = 1;
+    txt2.value = 2;
+    txt3.value = 3;
+    txt4.value = 4;
+    txt5.value = 5;
+    var btn = document.getElementById('btn');
+    btn.onclick = function () {
+        console.log(txt1.value + '|' + txt2.value + '|' + txt3.value + '|' + txt4.value + '|' + txt5.value);
+    }
+</script>
+</body>
+</html>
