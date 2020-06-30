@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>div1</div>
+<div>div2</div>
+<p>p1</p>
+<span>span1</span>
+<span>span2</span>
+<span>span3</span>
+<script>
+    var divs = document.getElementsByTagName('div');
+    console.log(divs);
+    for (var i = 0; i < divs.length; i++) {
+        var div = divs[i];
+        console.log(div);
+    }
+</script>
+</body>
+</html>
