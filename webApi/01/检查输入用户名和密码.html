@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    用户名:<input type="text" id="username"> <br>
+    密码:<input type="text" id="password"><br>
+    <input type="button" value="提交" id="tj">
+</div>
+<script>
+    var btn = document.getElementById('tj');
+    btn.onclick = function () {
+        var username = document.getElementById('username');
+        var password = document.getElementById('password');
+        if (username.value == null || username.value.trim() === '') {
+            alert("请输入用户名");
+            return;
+        }
+        if (password.value == null || password.value.trim() === '') {
+            alert("请输入密码");
+        }
+        //todo 业务逻辑
+    }
+</script>
+</body>
+</html>
