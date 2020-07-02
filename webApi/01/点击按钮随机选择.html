@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input type="button" value="随机选择" id='btn'><br>
+    <select id="opts">
+        <option id="football">足球</option>
+        <option id="basket">篮球</option>
+        <option id="paiqiu">排球</option>
+    </select>
+
+    <script>
+        var btn = document.getElementById('btn');
+        btn.onclick = function () {
+            var opts = document.getElementById('opts');
+            var options = opts.getElementsByTagName('option');
+            var option = options[parseInt(Math.random() * options.length)];
+            option.selected = true;
+        }
+    </script>
+</div>
+</body>
+</html>
